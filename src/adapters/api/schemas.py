@@ -12,10 +12,12 @@ class Message(BaseModel):
 
 class ChatRequest(BaseModel):
     messages: List[Message] = Field(default_factory=list)
+    character_id: Optional[str] = None
+    model_provider: Optional[str] = None
+    model_name: Optional[str] = None
     temperature: Optional[float] = None
     max_new_tokens: Optional[int] = None
 
 
 class ChatResponse(BaseModel):
     reply: str
-

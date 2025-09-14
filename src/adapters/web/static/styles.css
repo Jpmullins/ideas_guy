@@ -18,6 +18,9 @@ body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system
 .avatar-fallback { width: 64px; height: 64px; border-radius: 16px; display:flex; align-items:center; justify-content:center; background: var(--accent); color:#111; font-weight: 800; }
 .title h1 { margin: 0; font-size: 20px; letter-spacing: 0.5px; }
 .title .tag { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+.picker { margin-left: auto; display:flex; align-items:center; gap: 8px; color: var(--muted); }
+.picker label { font-size: 12px; }
+.picker select { background:#0a0a0a; color: var(--fg); border:1px solid #222; border-radius: 8px; padding: 6px; }
 
 .chat { max-width: 900px; margin: 0 auto; padding: 20px; }
 .log { display: flex; flex-direction: column; gap: 14px; min-height: 60vh; padding: 10px 0; }
@@ -39,4 +42,3 @@ body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system
 /* Sticky-note idea vibes */
 .bubble ul { margin: 0 0 0 18px; }
 .bubble li { margin: 4px 0; }
-

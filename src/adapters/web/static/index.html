@@ -8,10 +8,16 @@
   </head>
   <body>
     <header class="hero">
-      <img src="/assets/ideas_guy.png" alt="Ideas Guy" class="avatar" onerror="this.outerHTML='<div class=avatar-fallback>IG</div>'"/>
+      <img id="avatar" src="/assets/ideas_guy.png" alt="Character" class="avatar" onerror="this.outerHTML='<div class=avatar-fallback>IG</div>'"/>
       <div class="title">
-        <h1>Ideas Guy</h1>
-        <p class="tag">Okay, picture this… let’s ship ten ideas in five minutes.</p>
+        <h1 id="char-name">Ideas Guy</h1>
+        <p id="char-desc" class="tag">Okay, picture this… let’s ship ten ideas in five minutes.</p>
+      </div>
+      <div class="picker">
+        <label for="character">Character</label>
+        <select id="character"></select>
+        <label for="model">Model</label>
+        <select id="model"></select>
       </div>
     </header>
 
@@ -31,4 +37,3 @@
     <script src="/static/app.js"></script>
   </body>
   </html>
-

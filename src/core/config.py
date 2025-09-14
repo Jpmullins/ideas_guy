@@ -11,6 +11,10 @@ class Settings(BaseSettings):
     enable_cors: bool = True
     frontend_mount_path: str = "/"
     assets_dir: str = "assets"
+    characters_dir: str = "characters"
+    # vLLM (OpenAI-compatible server). Run vLLM on 8001 to avoid clashing with this app.
+    vllm_endpoint: str = "http://localhost:8001/v1"
+    vllm_api_key: str | None = None
 
     class Config:
         env_file = ".env"
@@ -25,4 +29,3 @@ class AppInfo(BaseModel):
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
     return Settings()  # reads env
-
