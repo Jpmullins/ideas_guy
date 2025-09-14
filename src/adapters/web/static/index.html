@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ideas Guy — Chat</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <img src="/assets/ideas_guy.png" alt="Ideas Guy" class="avatar" onerror="this.outerHTML='<div class=avatar-fallback>IG</div>'"/>
+      <div class="title">
+        <h1>Ideas Guy</h1>
+        <p class="tag">Okay, picture this… let’s ship ten ideas in five minutes.</p>
+      </div>
+    </header>
+
+    <main class="chat">
+      <div id="log" class="log"></div>
+
+      <form id="form" class="composer">
+        <input id="input" type="text" placeholder="Pitch me a problem…" autocomplete="off" />
+        <button id="send" type="submit">Idea Blast</button>
+      </form>
+    </main>
+
+    <footer class="notes">
+      <span>Persona is satirical and safe. Responses are generated using a local Hugging Face model.</span>
+    </footer>
+
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
+

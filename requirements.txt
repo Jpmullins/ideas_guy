@@ -1,0 +1,15 @@
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.1
+transformers>=4.41.0
+huggingface-hub>=0.24.0
+
+# Dev/test tools
+pytest>=8.2.0
+black>=24.4.0
+ruff>=0.5.0
+
+# Note: install an appropriate backend for Transformers separately (e.g., PyTorch):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
